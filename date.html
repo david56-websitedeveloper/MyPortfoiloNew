@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hero-container{
+            padding: 90px;
+            margin: 10px;
+            background-color: #e9ecef;
+          
+           
+        }
+
+        .h1-text{
+            width: 900px;
+        }
+
+        #h1{
+            color: black;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        #button{
+            color: black;
+            background-color: #dfe3e7d7;
+            margin: 4px;
+            padding: 15px;
+            border-radius: 25px;
+            border-color: black;
+            box-shadow: 0 0 0 0.3em blue;
+            font-weight: 800;
+            font-size: 15px;
+
+        }
+
+        #button:hover{
+background-color:#e4eff9f9 ;
+cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero-container">
+        <div class="h1-text">
+            <h1 id="Gun">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quasi alias exercitationem facere asperiores consequuntur similique quas ad molestiae perspiciatis voluptas id, error dolor facilis laboriosam distinctio tenetur explicabo nisi.</h1>
+       <button type="button" id="button">You want to more</button>
+        </div>
+    </div>
+
+    <script>
+      const textBody = document.getElementById('Gun');
+      const buttonText = document.getElementById('button');
+      const originalText = textBody.innerText;
+
+      buttonText.addEventListener('click', function(){
+      if(textBody.innerText === originalText){
+       textBody.innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quasi alias exercitationem facere asperiores consequuntur similique quas";
+      } else {
+        textBody.innerText = originalText;
+      }
+      });
+    </script>
+</body>
+</html>

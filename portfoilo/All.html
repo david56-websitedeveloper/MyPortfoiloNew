@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All | Projects Lists Comming Soon...</title>
+    
+<style>
+    header{
+        margin-left: 35%;
+        margin-top: 5%;
+        padding: 70px;
+        max-width: 450px;
+        background-color: azure;
+        color: black;
+        text-align: center;
+        font-size: 35px;
+        box-shadow: 0 0 0.8em rgb(57, 57, 175);
+    }
+
+    button{
+        margin-left: 42%;
+        margin-top: 5%;
+        padding: 10px;
+        max-width: 450px;
+        background-color: rgb(251, 255, 255);
+        color: rgb(18, 18, 17);
+        text-align: center;
+        font-size: 35px; 
+        border-radius: 40px;
+        border-color: blue;
+        cursor: pointer;
+        box-shadow: 0 0 0.4em blue;
+        transition: transform 0.1s ease-in-out;
+    }
+    button:active {
+  transform: translateY(2px); /* Move the button down slightly when active */
+}
+</style>
+
+</head>
+<body>
+    <header>All | Projects Lists Comming Soon...</header>
+    <button id="goBackButton"><<--- GO Back <<--</button>
+
+    <script>
+    document.getElementById("goBackButton").addEventListener("click", function() {
+        window.history.back(); // This function navigates the browser back one step
+      });
+    </script>
+</body>
+</html>

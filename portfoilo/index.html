@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROSHAN KATUWAL | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="index.css">
+</head>
+<body class="bg-gray-50 font-sans text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-sm z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-xl font-bold text-blue-500">ROSHAN</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8 font-bold">
+                    <a href="#home" class="nav-link text-gray-700 hover:text-blue-500">Home</a>
+                    <a href="#about" class="nav-link text-gray-700 hover:text-blue-500">About</a>
+                    <a href="#skills" class="nav-link text-gray-700 hover:text-blue-500">Skills</a>
+                    <a href="#projects" class="nav-link text-gray-700 hover:text-blue-500">Projects</a>
+                    <a href="#contact" class="nav-link text-gray-700 hover:text-blue-500">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="menu-btn" class="text-gray-700">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white pb-4 px-4 shadow-lg">
+            <a href="#home" class="block py-2 text-gray-700 hover:text-blue-500">Home</a>
+            <a href="#about" class="block py-2 text-gray-700 hover:text-blue-500">About</a>
+            <a href="#skills" class="block py-2 text-gray-700 hover:text-blue-500">Skills</a>
+            <a href="#projects" class="block py-2 text-gray-700 hover:text-blue-500">Projects</a>
+            <a href="#contact" class="block py-2 text-gray-700 hover:text-blue-500">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-24 pb-16 md:pt-32 md:pb-24 px-4">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Hi, I'm <span class="text-blue-500">ROSHAN</span></h1>
+                <h2 class="text-2xl md:text-3xl text-gray-600 mb-6">Web Developer & Designer</h2>
+                <p class="text-gray-600 mb-8">I create beautiful, functional websites with a focus on user experience and clean code.</p>
+                <div class="flex space-x-4">
+                    <a href="#contact" class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg transition duration-300">Contact Me</a>
+                    <a href="#projects" class="border border-blue-500 text-blue-500 hover:bg-blue-50 px-6 py-3 rounded-lg transition duration-300">View Work</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-xl">
+                    <!-- Replace with your photo -->
+                    <img src="./assets/profilr.jpg" alt="Your Name" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 px-4 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">About <span class="text-blue-500">Me</span></h2>
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/3 mb-8 md:mb-0 flex justify-center">
+                    <div class="w-48 h-48 rounded-lg overflow-hidden shadow-lg">
+                        <img src="./assets/profilr.jpg" alt="About Me" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                <div class="md:w-2/3 md:pl-12">
+                    <p class="text-gray-600 mb-6">I'm a passionate web developer with 5 years of experience creating modern, responsive websites and applications. I specialize in front-end development with a focus on clean, efficient code and intuitive user interfaces.</p>
+                    <p class="text-gray-600 mb-6">My journey in web development began when I was studying Computer Science at University. Since then, I've worked with various startups and agencies, helping them bring their digital visions to life.</p>
+                    <p class="text-gray-600 mb-8">When I'm not coding, you can find me hiking, reading tech blogs, or experimenting with new web technologies.</p>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="bg-blue-50 text-blue-600 px-4 py-2 rounded-full">HTML/CSS</div>
+                        <div class="bg-blue-50 text-blue-600 px-4 py-2 rounded-full">JavaScript</div>
+                        <div class="bg-blue-50 text-blue-600 px-4 py-2 rounded-full">React</div>
+                        <div class="bg-blue-50 text-blue-600 px-4 py-2 rounded-full">TailwindCSS</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">My <span class="text-blue-500">Skills</span></h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+                <!-- Skill 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                    <div class="text-blue-500 mb-4">
+                        <i class="fab fa-html5 text-4xl"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">HTML5</h3>
+                    <p class="text-gray-600">Semantic markup, accessibility, and modern HTML features.</p>
+                </div>
+                
+                <!-- Skill 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                    <div class="text-blue-500 mb-4">
+                        <i class="fab fa-css3-alt text-4xl"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">CSS3</h3>
+                    <p class="text-gray-600">Responsive design, animations, and modern layout techniques.</p>
+                </div>
+                
+                <!-- Skill 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                    <div class="text-blue-500 mb-4">
+                        <i class="fab fa-js text-4xl"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">JavaScript</h3>
+                    <p class="text-gray-600">ES6+, DOM manipulation, and modern JS frameworks.</p>
+                </div>
+                
+                <!-- Skill 4 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                    <div class="text-blue-500 mb-4">
+                        <i class="fab fa-react text-4xl"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">React</h3>
+                    <p class="text-gray-600">Component-based architecture, hooks, and state management.</p>
+                </div>
+                
+                <!-- Skill 5 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                    <div class="text-blue-500 mb-4">
+                        <i class="fas fa-mobile-alt text-4xl"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Responsive Design</h3>
+                    <p class="text-gray-600">Mobile-first approach and cross-browser compatibility.</p>
+                </div>
+                
+                <!-- Skill 6 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                    <div class="text-blue-500 mb-4">
+                        <i class="fas fa-paint-brush text-4xl"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">UI/UX Design</h3>
+                    <p class="text-gray-600">User-centered design principles and prototyping.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 px-4 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">My <span class="text-blue-500">Projects</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card bg-white rounded-xl overflow-hidden shadow-md">
+                    <div class="h-48 overflow-hidden">
+                        <img src="./assets/MyDesign_Website_template/COurse.png" alt="Project 1" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">E-commerce Website</h3>
+                        <p class="text-gray-600 mb-4">A fully responsive online store with cart functionality and payment integration.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-600 text-xs px-2 py-1 rounded">React</span>
+                            <span class="bg-blue-100 text-blue-600 text-xs px-2 py-1 rounded">Node.js</span>
+                            <span class="bg-blue-100 text-blue-600 text-xs px-2 py-1 rounded">MongoDB</span>
+                        </div>
+                        <a href="#" class="text-blue-500 hover:text-blue-600 font-medium">View Project →</a>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card bg-white rounded-xl overflow-hidden shadow-md">
+                    <div class="h-48 overflow-hidden">
+                        <img src="./assets/MyDesign_Website_template/port.png" alt="Project 2" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Portfolio Template</h3>
+                        <p class="text-gray-600 mb-4">A clean, modern portfolio template built with TailwindCSS and JavaScript.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-600 text-xs px-2 py-1 rounded">HTML</span>
+                            <span class="bg-blue-100 text-blue-600 text-xs px-2 py-1 rounded">TailwindCSS</span>
+                            <span class="bg-blue-100 text-blue-600 text-xs px-2 py-1 rounded">JavaScript</span>
+                        </div>
+                        <a href="#" class="text-blue-500 hover:text-blue-600 font-medium">View Project →</a>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card bg-white rounded-xl overflow-hidden shadow-md">
+                    <div class="h-48 overflow-hidden">
+                        <img src="./assets/MyDesign_Website_template/Task.jpeg" alt="Project 3" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Task Management App</h3>
+                        <p class="text-gray-600 mb-4">A productivity app for organizing tasks with drag-and-drop functionality.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-600 text-xs px-2 py-1 rounded">Vue.js</span>
+                            <span class="bg-blue-100 text-blue-600 text-xs px-2 py-1 rounded">Firebase</span>
+                        </div>
+                        <a href="" class="text-blue-500 hover:text-blue-600 font-medium">View Project →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="All.html" class="inline-block border border-blue-500 text-blue-500 hover:bg-blue-50 px-6 py-3 rounded-lg transition duration-300">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">Get In <span class="text-blue-500">Touch</span></h2>
+            <div class="bg-white rounded-xl shadow-md p-8">
+                <form id="contact-form" class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="name" class="block text-gray-700 mb-2">Your Name</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 mb-2">Your Email</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="subject" class="block text-gray-700 mb-2">Subject</label>
+                        <input type="text" id="subject" name="subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-gray-700 mb-2">Your Message</label>
+                        <textarea id="message" name="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" required></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg transition duration-300 w-full md:w-auto">Send Message</button>
+                    </div>
+                </form>
+                <div id="form-message" class="mt-4 hidden"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">ROSHAN</h3>
+                    <p class="text-gray-400">Creating beautiful, functional websites with a focus on user experience and clean code.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition duration-300">About</a></li>
+                        <li><a href="#skills" class="text-gray-400 hover:text-white transition duration-300">Skills</a></li>
+                        <li><a href="#projects" class="text-gray-400 hover:text-white transition duration-300">Projects</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Connect</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white text-xl transition duration-300"><i class="fab fa-github"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl transition duration-300"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl transition duration-300"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl transition duration-300"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="mt-4">
+                        <p class="text-gray-400">Email: roshankatuwal906@gmail.com</p>
+                        <p class="text-gray-400">Phone: +977 9762726211</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Roshan. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js">
+   
+    </script>
+</body>
+</html>

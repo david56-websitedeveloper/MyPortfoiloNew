@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Awesome To-Do List</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .input-container {
+            display: flex;
+            margin-bottom: 15px;
+        }
+        input[type="text"] {
+            flex-grow: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px 0 0 4px;
+            font-size: 16px;
+        }
+        button {
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #4cae4c;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            display: flex;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+        li:last-child {
+            border-bottom: none;
+        }
+        .task-text {
+            flex-grow: 1;
+            margin-left: 10px;
+        }
+        .completed {
+            text-decoration: line-through;
+            color: #888;
+        }
+        .complete-button, .delete-button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            margin-left: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .complete-button:hover {
+            background-color: #0056b3;
+        }
+        .delete-button {
+            background-color: #dc3545;
+        }
+        .delete-button:hover {
+            background-color: #c82333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My To-Do List</h1>
+        <div class="input-container">
+            <input type="text" id="newTask" placeholder="Add new task...">
+            <button id="addTaskBtn">Add</button>
+        </div>
+        <ul id="taskList">
+            </ul>
+    </div>
+
+    <script>
+        // 1. Get references to HTML elements
+        const newTaskInput = document.getElementById('newTask');
+        const addTaskButton = document.getElementById('addTaskBtn');
+        const taskList = document.getElementById('taskList');
+
+        // 2. Function to add a new task to the list
+        function addTask() {
+            // Get the text from the input field and remove any leading/trailing whitespace
+            const taskText = newTaskInput.value.trim();
+
+            // Check if the input is not empty
+            if (taskText !== "") {
+                // Create a new list item (<li>) element
+                const listItem = document.createElement('li');
+
+                // Create a span for the task text
+                const taskSpan = document.createElement('span');
+                taskSpan.classList.add('task-text'); // Add a class for styling
+                taskSpan.textContent = taskText;
+
+                // Create a button to mark the task as complete
+                const completeButton = document.createElement('button');
+                completeButton.textContent = 'Complete';
+                completeButton.classList.add('complete-button');
+
+                // Add an event listener to the complete button
+                completeButton.addEventListener('click', function() {
+                    // 'this' refers to the completeButton that was clicked
+                    // 'this.parentNode' gets the parent element, which is the <li>
+                    this.parentNode.querySelector('.task-text').classList.toggle('completed');
+                });
+
+                // Create a button to delete the task
+                const deleteButton = document.createElement('button');
+                deleteButton.textContent = 'Delete';
+                deleteButton.classList.add('delete-button');
+
+                // Add an event listener to the delete button
+                deleteButton.addEventListener('click', function() {
+                    // 'this' refers to the deleteButton that was clicked
+                    // 'this.parentNode' gets the parent element (the <li>)
+                    // 'this.parentNode.remove()' removes the <li> from the DOM
+                    this.parentNode.remove();
+                });
+
+                // Append the task text span and the buttons to the list item
+                listItem.appendChild(taskSpan);
+                listItem.appendChild(completeButton);
+                listItem.appendChild(deleteButton);
+
+                // Append the new list item to the task list (<ul>)
+                taskList.appendChild(listItem);
+
+                // Clear the input field after adding the task
+                newTaskInput.value = "";
+            }
+        }
+
+        // 3. Event listener for the "Add" button click
+        addTaskButton.addEventListener('click', addTask);
+
+        // 4. Event listener for pressing "Enter" key in the input field
+        newTaskInput.addEventListener('keypress', function(event) {
+            // Check if the pressed key is "Enter" (keyCode 13)
+            if (event.key === 'Enter') {
+                // Prevent the default action of the Enter key (e.g., submitting a form)
+                event.preventDefault();
+                // Call the addTask function
+                addTask();
+            }
+        });
+    </script>
+</body>
+</html>

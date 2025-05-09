@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .project-card {
+            transition: all 0.3s ease;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        .fade-in {
+            opacity: 0;
+            transition: opacity 0.6s ease-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans antialiased text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white bg-opacity-90 shadow-sm z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-xl font-semibold text-indigo-600">Portfolio</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-indigo-600 transition">Home</a>
+                    <a href="#projects" class="text-gray-700 hover:text-indigo-600 transition">Projects</a>
+                    <a href="#contact" class="text-gray-700 hover:text-indigo-600 transition">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="menu-btn" class="text-gray-700">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-2 px-4 shadow-lg">
+            <a href="#home" class="block py-2 text-gray-700 hover:text-indigo-600 transition">Home</a>
+            <a href="#projects" class="block py-2 text-gray-700 hover:text-indigo-600 transition">Projects</a>
+            <a href="#contact" class="block py-2 text-gray-700 hover:text-indigo-600 transition">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-24 pb-16 md:pt-32 md:pb-24 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+        <div class="flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-8 md:mb-0 fade-in">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Hi, I'm <span class="text-indigo-600">Alex</span></h1>
+                <h2 class="text-xl md:text-2xl text-gray-600 mb-6">Web Developer & Designer</h2>
+                <p class="text-gray-600 mb-8 max-w-md">I create beautiful, functional websites and applications with modern technologies and user-focused design.</p>
+                <div class="flex space-x-4">
+                    <a href="#projects" class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-lg transition shadow-md">View Projects</a>
+                    <a href="#contact" class="border border-indigo-600 text-indigo-600 hover:bg-indigo-50 px-6 py-3 rounded-lg transition">Contact Me</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 fade-in">
+                <img src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                     alt="Workspace" 
+                     class="rounded-xl shadow-xl w-full max-w-md mx-auto">
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto bg-white rounded-xl shadow-sm mt-8">
+        <div class="text-center mb-12 fade-in">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">My Projects</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">Here are some of my recent works. Each project was carefully crafted to solve specific problems.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Project 1 -->
+            <div class="project-card bg-white rounded-xl overflow-hidden shadow-md fade-in">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                     alt="Project 1" 
+                     class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">E-commerce Platform</h3>
+                    <p class="text-gray-600 mb-4">A full-featured online store with payment integration and inventory management.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">React</span>
+                        <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">Node.js</span>
+                        <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">MongoDB</span>
+                    </div>
+                    <a href="#" class="text-indigo-600 hover:text-indigo-800 font-medium">View Project →</a>
+                </div>
+            </div>
+            
+            <!-- Project 2 -->
+            <div class="project-card bg-white rounded-xl overflow-hidden shadow-md fade-in">
+                <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" 
+                     alt="Project 2" 
+                     class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">Task Management App</h3>
+                    <p class="text-gray-600 mb-4">A productivity application for teams to collaborate on projects and tasks.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">Vue.js</span>
+                        <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">Firebase</span>
+                        <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">TailwindCSS</span>
+                    </div>
+                    <a href="#" class="text-indigo-600 hover:text-indigo-800 font-medium">View Project →</a>
+                </div>
+            </div>
+            
+            <!-- Project 3 -->
+            <div class="project-card bg-white rounded-xl overflow-hidden shadow-md fade-in">
+                <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1436&q=80" 
+                     alt="Project 3" 
+                     class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">Health Tracker</h3>
+                    <p class="text-gray-600 mb-4">A mobile-friendly application to track fitness goals and nutrition.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">React Native</span>
+                        <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">GraphQL</span>
+                        <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">TypeScript</span>
+                    </div>
+                    <a href="#" class="text-indigo-600 hover:text-indigo-800 font-medium">View Project →</a>
+                </div>
+            </div>
+            
+            <!-- Project 4 -->
+            <div class="project-card bg-white rounded-xl overflow-hidden shadow-md fade-in">
+                <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                     alt="Project 4" 
+                     class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">Portfolio Website</h3>
+                    <p class="text-gray-600 mb-4">A custom portfolio website for a photographer with gallery functionality.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">HTML/CSS</span>
+                        <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">JavaScript</span>
+                        <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">GSAP</span>
+                    </div>
+                    <a href="#" class="text-indigo-600 hover:text-indigo-800 font-medium">View Project →</a>
+                </div>
+            </div>
+            
+            <!-- Project 5 -->
+            <div class="project-card bg-white rounded-xl overflow-hidden shadow-md fade-in">
+                <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                     alt="Project 5" 
+                     class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">CRM System</h3>
+                    <p class="text-gray-600 mb-4">Customer relationship management tool for small businesses.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">Angular</span>
+                        <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">Django</span>
+                        <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">PostgreSQL</span>
+                    </div>
+                    <a href="#" class="text-indigo-600 hover:text-indigo-800 font-medium">View Project →</a>
+                </div>
+            </div>
+            
+            <!-- Project 6 -->
+            <div class="project-card bg-white rounded-xl overflow-hidden shadow-md fade-in">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                     alt="Project 6" 
+                     class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">Team Collaboration</h3>
+                    <p class="text-gray-600 mb-4">A platform for remote teams to communicate and share files.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">Svelte</span>
+                        <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">Node.js</span>
+                        <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">WebSockets</span>
+                    </div>
+                    <a href="#" class="text-indigo-600 hover:text-indigo-800 font-medium">View Project →</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-12 fade-in">
+            <a href="#" class="inline-block border border-indigo-600 text-indigo-600 hover:bg-indigo-50 px-6 py-3 rounded-lg transition">View All Projects</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto mt-8">
+        <div class="text-center mb-12 fade-in">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Get In Touch</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">Have a project in mind or want to discuss potential opportunities? Feel free to reach out!</p>
+        </div>
+        
+        <div class="bg-white rounded-xl shadow-sm p-8 fade-in">
+            <form id="contact-form" class="space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                        <input type="text" id="name" name="name" required 
+                               class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                        <input type="email" id="email" name="email" required 
+                               class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition">
+                    </div>
+                </div>
+                <div>
+                    <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+                    <input type="text" id="subject" name="subject" 
+                           class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition">
+                </div>
+                <div>
+                    <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                    <textarea id="message" name="message" rows="5" required 
+                              class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition"></textarea>
+                </div>
+                <div>
+                    <button type="submit" 
+                            class="w-full bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-lg transition shadow-md flex items-center justify-center">
+                        Send Message
+                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+            
+            <div id="form-success" class="hidden mt-6 p-4 bg-green-100 text-green-800 rounded-lg">
+                Thank you for your message! I'll get back to you soon.
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-12 px-4 sm:px-6 lg:px-8 mt-16">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <span class="text-xl font-semibold text-indigo-600">Portfolio</span>
+                    <p class="text-gray-600 mt-2">Creating digital experiences that matter.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-600 hover:text-indigo-600 transition">
+                        <i class="fab fa-github text-2xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-600 hover:text-indigo-600 transition">
+                        <i class="fab fa-linkedin text-2xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-600 hover:text-indigo-600 transition">
+                        <i class="fab fa-twitter text-2xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-600 hover:text-indigo-600 transition">
+                        <i class="fab fa-dribbble text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-200 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-600 mb-4 md:mb-0">© 2023 My Portfolio. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-600 hover:text-indigo-600 transition">Privacy Policy</a>
+                    <a href="#" class="text-gray-600 hover:text-indigo-600 transition">Terms of Service</a>
+                    <a href="#" class="text-gray-600 hover:text-indigo-600 transition">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Form submission
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Here you would typically send the form data to a server
+            // For demo purposes, we'll just show the success message
+            document.getElementById('form-success').classList.remove('hidden');
+            this.reset();
+            
+            // Hide success message after 5 seconds
+            setTimeout(() => {
+                document.getElementById('form-success').classList.add('hidden');
+            }, 5000);
+        });
+
+        // Scroll animation for fade-in elements
+        function checkVisibility() {
+            const elements = document.querySelectorAll('.fade-in');
+            elements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                
+                if (elementTop < windowHeight - 100) {
+                    element.classList.add('visible');
+                }
+            });
+        }
+
+        // Check on load
+        document.addEventListener('DOMContentLoaded', checkVisibility);
+        // Check on scroll
+        window.addEventListener('scroll', checkVisibility);
+    </script>
+</body>
+</html>
