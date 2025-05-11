@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Projects for Practice</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 20px;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 30px;
+    }
+    h2 {
+      color: #3498db;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 5px;
+      margin-top: 30px;
+    }
+    .project-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 15px;
+    }
+    .project {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 15px;
+      transition: transform 0.2s;
+    }
+    .project:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    .project h3 {
+      margin-top: 0;
+      color: #e74c3c;
+    }
+    .project a {
+      color: #2980b9;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .project a:hover {
+      text-decoration: underline;
+    }
+    .difficulty {
+      display: inline-block;
+      padding: 3px 8px;
+      border-radius: 3px;
+      font-size: 12px;
+      font-weight: bold;
+      margin-right: 5px;
+    }
+    .beginner {
+      background: #2ecc71;
+      color: white;
+    }
+    .intermediate {
+      background: #f39c12;
+      color: white;
+    }
+    .advanced {
+      background: #e74c3c;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>JavaScript Projects for Practice</h1>
+    
+    <h2>Beginner Projects</h2>
+    <div class="project-list">
+      <div class="project">
+        <h3>To-Do List</h3>
+        <p>Add, delete, and mark tasks as complete with LocalStorage.</p>
+        <span class="difficulty beginner">Beginner</span>
+        <a href="https://www.youtube.com/watch?v=G0jO8kUrg-I" target="_blank">Tutorial</a>
+      </div>
+      <div class="project">
+        <h3>Calculator</h3>
+        <p>Basic arithmetic operations with a clean UI.</p>
+        <span class="difficulty beginner">Beginner</span>
+        <a href="https://www.freecodecamp.org/news/how-to-build-a-calculator-using-javascript/" target="_blank">Tutorial</a>
+      </div>
+      <div class="project">
+        <h3>Weather App</h3>
+        <p>Fetch weather data using the OpenWeatherMap API.</p>
+        <span class="difficulty beginner">Beginner</span>
+        <a href="https://www.youtube.com/watch?v=WZNG8UomjSI" target="_blank">Tutorial</a>
+      </div>
+      <div class="project">
+        <h3>Countdown Timer</h3>
+        <p>Create a timer that counts down to a specific date/time.</p>
+        <span class="difficulty beginner">Beginner</span>
+        <a href="https://www.youtube.com/watch?v=dtKciwk_si4" target="_blank">Tutorial</a>
+      </div>
+      <div class="project">
+        <h3>Quiz App</h3>
+        <p>Simple multiple-choice quiz with score tracking.</p>
+        <span class="difficulty beginner">Beginner</span>
+        <a href="https://www.youtube.com/watch?v=riDzcEQbX6k" target="_blank">Tutorial</a>
+      </div>
+      <div class="project">
+        <h3>Random Quote Generator</h3>
+        <p>Display random quotes with a tweet button.</p>
+        <span class="difficulty beginner">Beginner</span>
+        <a href="https://www.freecodecamp.org/news/create-a-random-quote-machine-with-javascript/" target="_blank">Tutorial</a>
+      </div>
+      <div class="project">
+        <h3>Password Generator</h3>
+        <p>Generate random passwords with customizable options.</p>
+        <span class="difficulty beginner">Beginner</span>
+        <a href="https://www.youtube.com/watch?v=duNmhKgtcsI" target="_blank">Tutorial</a>
+      </div>
+      <div class="project">
+        <h3>Digital Clock</h3>
+        <p>Display current time with AM/PM indicator.</p>
+        <span class="difficulty beginner">Beginner</span>
+        <a href="https://www.youtube.com/watch?v=EWv2jnhZErc" target="_blank">Tutorial</a>
+      </div>
+    </div>
+
+    <h2>Intermediate Projects</h2>
+    <div class="project-list">
+      <div class="project">
+        <h3>GitHub Profile Finder</h3>
+        <p>Search GitHub users using the GitHub API.</p>
+        <span class="difficulty intermediate">Intermediate</span>
+        <a href="https://www.youtube.com/watch?v=dtKciwk_si4" target="_blank">Tutorial</a>
+      </div>
+      <div class="project">
+        <h3>Expense Tracker</h3>
+        <p>Track income/expenses with Chart.js visualization.</p>
+        <span class="difficulty intermediate">Intermediate</span>
+        <a href="https://www.youtube.com/watch?v=XuFDcZABiDQ" target="_blank">Tutorial</a>
+      </div>
+      <div class="project">
+        <h3>Movie Search App</h3>
+        <p>Search movies using OMDB or TMDb API.</p>
+        <span class="difficulty intermediate">Intermediate</span>
+        <a href="https://www.freecodecamp.org/news/build-a-movie-search-app-using-react-hooks/" target="_blank">Tutorial</a>
+      </div>
+      <div class="project">
+        <h3>Recipe Finder</h3>
+        <p>Search recipes with filtering by ingredients.</p>
+        <span class="difficulty intermediate">Intermediate</span>
+        <a href="https://www.youtube.com/watch?v=U9T6YkEDkMo" target="_blank">Tutorial</a>
+      </div>
+      <div class="project">
+        <h3>Drawing App</h3>
+        <p>Canvas-based drawing application with color picker.</p>
+        <span class="difficulty intermediate">Intermediate</span>
+        <a href="https://www.youtube.com/watch?v=3GqUM4mEYKA" target="_blank">Tutorial</a>
+      </div>
+      <div class="project">
+        <h3>Music Player</h3>
+        <p>Audio player with playlist functionality.</p>
+        <span class="difficulty intermediate">Intermediate</span>
+        <a href="https://www.youtube.com/watch?v=QTHRWGn_sJw" target="_blank">Tutorial</a>
+      </div>
+      <div class="project">
+        <h3>Note Taking App</h3>
+        <p>Rich text notes with categorization.</p>
+        <span class="difficulty intermediate">Intermediate</span>
+        <a href="https://www.youtube.com/watch?v=01YKQmiaaJ0" target="_blank">Tutorial</a>
+      </div>
+      <div class="project">
+        <h3>Workout Tracker</h3>
+        <p>Track exercise routines with progress charts.</p>
+        <span class="difficulty intermediate">Intermediate</span>
+        <a href="https://www.youtube.com/watch?v=gCzsW9XqJ0Q" target="_blank">Tutorial</a>
+      </div>
+    </div>
+
+    <h2>Advanced Projects</h2>
+    <div class="project-list">
+      <div class="project">
+        <h3>E-commerce Cart</h3>
+        <p>Add/remove items with React or Vue.</p>
+        <span class="difficulty advanced">Advanced</span>
+        <a href="https://www.youtube.com/watch?v=1wXYg8Eslnc" target="_blank">Tutorial</a>
+      </div>
+      <div class="project">
+        <h3>Real-Time Chat App</h3>
+        <p>Node.js + Socket.io or Firebase.</p>
+        <span class="difficulty advanced">Advanced</span>
+        <a href="https://www.youtube.com/watch?v=rxzOqP9YwmM" target="_blank">Tutorial</a>
+      </div>
+      <div class="project">
+        <h3>Job Board (Full-Stack)</h3>
+        <p>Post and filter jobs with Node + MongoDB.</p>
+        <span class="difficulty advanced">Advanced</span>
+        <a href="https://www.youtube.com/watch?v=0mQbxF-_R-M" target="_blank">Tutorial</a>
+      </div>
+      <div class="project">
+        <h3>Social Media Dashboard</h3>
+        <p>User profiles, posts, and comments with authentication.</p>
+        <span class="difficulty advanced">Advanced</span>
+        <a href="https://www.youtube.com/watch?v=m_u6P5k0vP0" target="_blank">Tutorial</a>
+      </div>
+      <div class="project">
+        <h3>Video Conference App</h3>
+        <p>WebRTC video calling with peer connections.</p>
+        <span class="difficulty advanced">Advanced</span>
+        <a href="https://www.youtube.com/watch?v=DvlyzDZDEq4" target="_blank">Tutorial</a>
+      </div>
+      <div class="project">
+        <h3>Stock Market Tracker</h3>
+        <p>Real-time stock data with interactive charts.</p>
+        <span class="difficulty advanced">Advanced</span>
+        <a href="https://www.youtube.com/watch?v=GhyKqj_P2E4" target="_blank">Tutorial</a>
+      </div>
+      <div class="project">
+        <h3>Online Code Editor</h3>
+        <p>Syntax highlighting and live preview.</p>
+        <span class="difficulty advanced">Advanced</span>
+        <a href="https://www.youtube.com/watch?v=wcVxX7lu2d4" target="_blank">Tutorial</a>
+      </div>
+      <div class="project">
+        <h3>AI Image Generator</h3>
+        <p>Integrate with OpenAI's DALL-E API.</p>
+        <span class="difficulty advanced">Advanced</span>
+        <a href="https://www.youtube.com/watch?v=fU4o_BKaUZE" target="_blank">Tutorial</a>
+      </div>
+    </div>
+
+    <h2>Fun & Creative Projects</h2>
+    <div class="project-list">
+      <div class="project">
+        <h3>Snake Game</h3>
+        <p>Classic Snake game using Canvas.</p>
+        <span class="difficulty intermediate">Intermediate</span>
+        <a href="https://www.youtube.com/watch?v=QTcIXok9wNY" target="_blank">Tutorial</a>
+      </div>
+      <div class="project">
+        <h3>3D Portfolio (Three.js)</h3>
+        <p>Interactive 3D portfolio using Three.js.</p>
+        <span class="difficulty advanced">Advanced</span>
+        <a href="https://www.youtube.com/watch?v=Q7AOvWpIVHU" target="_blank">Tutorial</a>
+      </div>
+      <div class="project">
+        <h3>Pixel Art Maker</h3>
+        <p>Create pixel art with customizable grid.</p>
+        <span class="difficulty intermediate">Intermediate</span>
+        <a href="https://www.youtube.com/watch?v=vAJEHfKtDx4" target="_blank">Tutorial</a>
+      </div>
+      <div class="project">
+        <h3>Memory Card Game</h3>
+        <p>Match pairs of cards with scoring system.</p>
+        <span class="difficulty intermediate">Intermediate</span>
+        <a href="https://www.youtube.com/watch?v=ZniVgo8U7ek" target="_blank">Tutorial</a>
+      </div>
+      <div class="project">
+        <h3>Virtual Piano</h3>
+        <p>Playable piano with keyboard support.</p>
+        <span class="difficulty intermediate">Intermediate</span>
+        <a href="https://www.youtube.com/watch?v=vjco5yKZpU8" target="_blank">Tutorial</a>
+      </div>
+      <div class="project">
+        <h3>Infinite Runner Game</h3>
+        <p>Side-scrolling game with obstacles.</p>
+        <span class="difficulty advanced">Advanced</span>
+        <a href="https://www.youtube.com/watch?v=bG2BmmYr9NQ" target="_blank">Tutorial</a>
+      </div>
+      <div class="project">
+        <h3>Fractal Generator</h3>
+        <p>Visualize mathematical fractals.</p>
+        <span class="difficulty advanced">Advanced</span>
+        <a href="https://www.youtube.com/watch?v=6z7GQewK-Ks" target="_blank">Tutorial</a>
+      </div>
+      <div class="project">
+        <h3>Voice Assistant</h3>
+        <p>Speech recognition and response system.</p>
+        <span class="difficulty advanced">Advanced</span>
+        <a href="https://www.youtube.com/watch?v=0mJC0A72Fnw" target="_blank">Tutorial</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

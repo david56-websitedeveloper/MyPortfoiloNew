@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Coding Routine</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f7fa;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        
+        h2 {
+            color: #2980b9;
+            margin-top: 30px;
+            border-left: 4px solid #3498db;
+            padding-left: 10px;
+        }
+        
+        .routine-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .time-slot {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            margin-bottom: 15px;
+        }
+        
+        .morning { border-top: 4px solid #f39c12; }
+        .afternoon { border-top: 4px solid #2ecc71; }
+        .evening { border-top: 4px solid #9b59b6; }
+        
+        .time {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .activity {
+            margin-top: 5px;
+        }
+        
+        .project-ideas {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            margin-top: 30px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        th {
+            background-color: #3498db;
+            color: white;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        .coding {
+            background-color: #3498db;
+            color: white;
+            padding: 3px 6px;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+        
+        .game-time {
+            background-color: #27ae60;
+            color: white;
+            padding: 3px 6px;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+        
+        .learning {
+            background-color: #f39c12;
+            color: white;
+            padding: 3px 6px;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Software Developer Coding Routine</h1>
+    
+    <div class="routine-container">
+        <div>
+            <h2>Morning Coding Session (5:30 AM - 9:30 AM)</h2>
+            
+            <div class="time-slot morning">
+                <div class="time">5:30 AM - 6:00 AM</div>
+                <div class="activity">Warm-up coding (leetcode/algorithm practice)</div>
+            </div>
+            
+            <div class="time-slot morning">
+                <div class="time">6:00 AM - 8:00 AM</div>
+                <div class="activity"><span class="coding">Deep coding:</span> Complex feature implementation</div>
+            </div>
+            
+            <div class="time-slot morning">
+                <div class="time">8:00 AM - 8:15 AM</div>
+                <div class="activity">Break (eye exercises, stretching)</div>
+            </div>
+            
+            <div class="time-slot morning">
+                <div class="time">8:15 AM - 9:15 AM</div>
+                <div class="activity"><span class="coding">Core development:</span> Main project work</div>
+            </div>
+            
+            <div class="time-slot morning">
+                <div class="time">9:15 AM - 9:30 AM</div>
+                <div class="activity">Code review & commit changes</div>
+            </div>
+        </div>
+        
+        <div>
+            <h2>Afternoon Coding Session (11:30 AM - 3:30 PM)</h2>
+            
+            <div class="time-slot afternoon">
+                <div class="time">11:30 AM - 12:30 PM</div>
+                <div class="activity"><span class="coding">Bug fixing</span> & code optimization</div>
+            </div>
+            
+            <div class="time-slot afternoon">
+                <div class="time">12:30 PM - 1:00 PM</div>
+                <div class="activity"><span class="game-time">Casual gaming</span> (mental reset)</div>
+            </div>
+            
+            <div class="time-slot afternoon">
+                <div class="time">1:00 PM - 2:00 PM</div>
+                <div class="activity"><span class="learning">Learning new tech</span> (frameworks, tools)</div>
+            </div>
+            
+            <div class="time-slot afternoon">
+                <div class="time">2:00 PM - 2:15 PM</div>
+                <div class="activity">Break (walk, hydration)</div>
+            </div>
+            
+            <div class="time-slot afternoon">
+                <div class="time">2:15 PM - 3:15 PM</div>
+                <div class="activity"><span class="coding">Project development</span> or open-source contribution</div>
+            </div>
+            
+            <div class="time-slot afternoon">
+                <div class="time">3:15 PM - 3:30 PM</div>
+                <div class="activity">Documentation & planning next steps</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="project-ideas">
+        <h2>Weekly Project & Learning Plan</h2>
+        
+        <table>
+            <tr>
+                <th>Day</th>
+                <th>Coding Focus</th>
+                <th>Learning Focus</th>
+                <th>Gaming Time</th>
+            </tr>
+            <tr>
+                <td>Monday</td>
+                <td>Full-stack web application</td>
+                <td>Advanced JavaScript/TypeScript</td>
+                <td><span class="game-time">8:00 PM - 9:00 PM</span></td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>API development (REST/GraphQL)</td>
+                <td>Database design & optimization</td>
+                <td><span class="game-time">7:30 PM - 8:30 PM</span></td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>Mobile app (React Native/Flutter)</td>
+                <td>New framework exploration</td>
+                <td><span class="game-time">6:30 PM - 7:30 PM</span></td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td>Open-source contributions</td>
+                <td>System architecture</td>
+                <td><span class="game-time">8:00 PM - 9:00 PM</span></td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td>Algorithm challenges</td>
+                <td>Cloud technologies (AWS/Azure)</td>
+                <td><span class="game-time">6:00 PM - 7:30 PM</span></td>
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td>Portfolio projects</td>
+                <td>DevOps & CI/CD</td>
+                <td><span class="game-time">Afternoon free time</span></td>
+            </tr>
+            <tr>
+                <td>Sunday</td>
+                <td>Code refactoring</td>
+                <td>Industry trends/research</td>
+                <td><span class="game-time">Full gaming day</span></td>
+            </tr>
+        </table>
+    </div>
+    
+    <div style="margin-top: 30px; text-align: center; font-style: italic; color: #7f8c8d;">
+        <p>Remember to take 5-minute breaks every hour to prevent burnout and maintain productivity.</p>
+        <p>Adjust gaming time based on your energy levels and project deadlines.</p>
+    </div>
+</body>
+</html>

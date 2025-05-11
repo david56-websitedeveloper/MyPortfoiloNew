@@ -1,0 +1,155 @@
+JavaScript को Logic र Syntax नेपालीमा
+मूल अवधारणाहरू (Basic Concepts)
+१. Variables (चलहरू)
+javascript
+Copy
+Download
+// घोषणा गर्ने तरिका
+let नाम = "राम"; // बदलिन सकिने
+const उमेर = 25; // बदलिन नसकिने
+var पुरानो_तरिका = "प्रयोग नगर्नुहोस्"; // पुरानो तरिका
+२. Data Types (डाटा प्रकारहरू)
+javascript
+Copy
+Download
+// मुख्य डाटा प्रकारहरू:
+const मेरो_नाम = "सिता"; // string (पाठ)
+const उमेर = 20; // number (संख्या)
+const सत्य_हो = true; // boolean (सत्य/असत्य)
+const खाली = null; // null (खाली)
+const अपरिभाषित = undefined; // undefined
+const व्यक्ति = { नाम: "हरि", उमेर: 30 }; // object (वस्तु)
+const संख्याहरू = [1, 2, 3]; // array (सूची)
+Operators (संक्रियकहरू)
+१. गणितीय संक्रियकहरू
+javascript
+Copy
+Download
+let x = 10, y = 5;
+
+console.log(x + y); // जोड (15)
+console.log(x - y); // घटाउ (5)
+console.log(x * y); // गुणन (50)
+console.log(x / y); // भाग (2)
+console.log(x % y); // भागशेष (0)
+२. तुलना संक्रियकहरू
+javascript
+Copy
+Download
+console.log(x == y); // बराबर (false)
+console.log(x != y); // बराबर होइन (true)
+console.log(x > y); // ठूलो (true)
+console.log(x < y); // सानो (false)
+console.log(x >= y); // ठूलो वा बराबर (true)
+console.log(x <= y); // सानो वा बराबर (false)
+नियन्त्रण संरचना (Control Structures)
+१. if-else (यदि-अन्यथा)
+javascript
+Copy
+Download
+let समय = 10;
+
+if (समय < 12) {
+    console.log("शुभ प्रभात");
+} else if (समय < 18) {
+    console.log("शुभ दिउँसो");
+} else {
+    console.log("शुभ सन्ध्या");
+}
+२. switch (चयन)
+javascript
+Copy
+Download
+let दिन = "सोमबार";
+
+switch (दिन) {
+    case "सोमबार":
+        console.log("सप्ताहको पहिलो दिन");
+        break;
+    case "मंगलबार":
+        console.log("दोस्रो दिन");
+        break;
+    default:
+        console.log("अरू दिन");
+}
+३. लूपहरू (Loops)
+javascript
+Copy
+Download
+// for लूप
+for (let i = 0; i < 5; i++) {
+    console.log(i); // 0, 1, 2, 3, 4
+}
+
+// while लूप
+let j = 0;
+while (j < 3) {
+    console.log(j); // 0, 1, 2
+    j++;
+}
+Functions (प्रकार्यहरू)
+javascript
+Copy
+Download
+// प्रकार्य परिभाषा
+function गरेर_जोड्नुहोस्(a, b) {
+    return a + b;
+}
+
+// प्रकार्य कल
+let जोड = गरेर_जोड्नुहोस्(5, 3);
+console.log(जोड); // 8
+
+// एरो प्रकार्य (arrow function)
+const गुणन = (x, y) => x * y;
+console.log(गुणन(4, 5)); // 20
+Arrays (सूचीहरू)
+javascript
+Copy
+Download
+let फलहरू = ["स्याउ", "कागति", "केरा"];
+
+// सूचीमा पहुँच
+console.log(फलहरू[0]); // "स्याउ"
+
+// सूचीमा थप्ने
+फलहरू.push("सुन्तला");
+
+// सूची लम्बाइ
+console.log(फलहरू.length); // 4
+
+// सूची लूप गर्ने
+फलहरू.forEach(फल => {
+    console.log(फल);
+});
+Objects (वस्तुहरू)
+javascript
+Copy
+Download
+let विद्यार्थी = {
+    नाम: "गोपाल",
+    उमेर: 22,
+    पढाइ: "कम्प्युटर",
+    जानकारी_दिनुहोस्: function() {
+        return `${this.नाम} ${this.उमेर} वर्ष, ${this.पढाइ} पढ्छन्`;
+    }
+};
+
+console.log(विद्यार्थी.नाम); // "गोपाल"
+console.log(विद्यार्थी.jानकारी_दिनुहोस्());
+DOM Manipulation (DOM परिवर्तन)
+javascript
+Copy
+Download
+// HTML एलिमेन्ट पाउने
+let हेडिङ = document.getElementById("मेरोहेडिङ");
+
+// सामग्री परिवर्तन गर्ने
+हेडिङ.textContent = "नमस्ते जावास्क्रिप्ट";
+
+// इभेन्ट लिस्नर थप्ने
+let बटन = document.querySelector("button");
+बटन.addEventListener("click", function() {
+    alert("बटन थिचियो!");
+});
+यी JavaScript का आधारभूत अवधारणाहरू हुन्। अभ्यास गर्नुहोस् र धेरै कोड लेख्नुहोस्! कुनै प्रश्न भए सोध्नुहोस्।
